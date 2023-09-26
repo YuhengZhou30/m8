@@ -1,4 +1,6 @@
-package com.example.pr11_primeraapp;
+package com.example.primera_apppr11;
+
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // No es necesario obtener el contexto nuevamente aquí
-                CharSequence texto = "Hello, Toast!";
+                CharSequence texto = "Hello, World!";
                 // Display a toast message
                 Toast.makeText(MainActivity.this, texto, Toast.LENGTH_SHORT).show();
             }
